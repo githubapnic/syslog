@@ -353,15 +353,16 @@ Then try and ping R1
 
 * To configure the router to send information to syslog, type the following commands:
 * The default port is 514, change it to **<span style="whitecolor: white; background-color: green;">5144</span>**
-    
-    enable
+
+  ```bash  
+  enable
     conf t
-    logging host 192.168.30.10 transport udp port 5144
-    logging facility local0
-    logging userinfo
-    end
+        logging host 192.168.30.10 transport udp port 5144
+        logging facility local0
+        logging userinfo
+        end
     wr
-    
+    ```
 
 
 Confirm logging is enabled by executing:
