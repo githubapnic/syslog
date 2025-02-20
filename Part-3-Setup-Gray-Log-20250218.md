@@ -28,8 +28,9 @@ Password = `training`
 Password = `training`
 
 * Install required packages.
-
-        sudo apt-get install -y apt-transport-https openjdk-8-jre-headless uuid-runtime pwgen
+```bash
+sudo apt-get install -y apt-transport-https openjdk-8-jre-headless uuid-runtime pwgen
+```
 
 
 > [!NOTE]
@@ -38,9 +39,9 @@ Password = `training`
 * Install MongoDB database server. Refer to the documentation for more details https://www.mongodb.com/what-is-mongodb.
 
    - Add the trusted key to the apt-key file
-
-            sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 4B7C549A058F8B6B
-
+```bash
+  sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 4B7C549A058F8B6B
+```
 ![add key for Mongo DB ](images/20250216-Gray-log-SYSLOG-mongodb-add-key-101.png)
 
    - Add the MongoDB repository to the recommended download list
